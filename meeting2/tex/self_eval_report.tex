@@ -1,0 +1,49 @@
+\documentclass[modern]{aastex62}
+\usepackage[utf8]{inputenc} 
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{url}
+%\geometry{margin=1in}
+
+
+\begin{document}
+\title{Student Self-Evaluation Meeting Two}
+\author{Jared Hand} 
+
+\section{What I've Been Doing}
+It has been two and a half years since my first and most recent committee meeting.  To recapitulate, my initial meeting occurred both before leaving for Berkeley, California for a DoE Office of Science SCGSR award to work with Dr. Alex Kim at the Lawrence Berkeley National Laboratory, and when starting to write a first paper on behalf of the Wood-Vasey research group.
+\begin{itemize}
+    \item Dr. Alex Kim and I worked to develop an empirical type Ia supernova (SN~Ia) model using SNfactory\footnote{\url{https://snfactory.lbl.gov/}} spectral time series.  The DoE award began August 2019 and was originally to end August 2020.  
+    \item My first paper presents our SN~Ia host galaxy observation and fitting technique comparison project.  Host galaxy stellar mass and specific star formation rate (sSFR) correlate with SN~Ia brightness both before brightness standardization for use in cosmology and after \citep{sullivan2010,rigault2020}.  We wanted to see if choice in observation method  or galaxy fitting technique influenced the host bias measurements using the PISCO SN~Ia subsample \citep{galbany2018}.
+    \item At the time of my first committee meeting, I had passed my core courses and was enrolled in the last of my four advanced graduated courses (which I passed!).  My long term goals at the time were to seek a postdoctural position and stay in academia.
+\end{itemize}
+During the summer of 2019 I began slipping into a serious OCD relapse.  My time in Berkeley dramatically increased the severity of my symptoms, being compounded by increasingly frequent panic attacks.  I was forced to return to Pittsburgh in late December 2019 to seek intensive treatment and decrease stressors.  This sick leave from the DoE originally gave me up to a year to recover (the pandemic changed this).  During this time the department and Professor Wood-Vasey provided incredible support in their funding and understanding during the challenging winter and spring of 2020.
+
+The pandemic occurring during my relapse recovery was a challenge on top of the stress and anxiety the event caused for everyone around the world.  The first draft of my first paper, "The Dependence of the Type Ia Supernova Host Bias on Observation or Fitting Technique", was submitted January 2021, the same month my DoE award restarted remotely.  Said award concluded July 2021, around when I submitted a second (and very flawed\footnote{I rushed edits to resubmit before internal fellowship deadlines and suffered a rightfully irritated referee's wrath.}) draft of my first paper.  A third draft was submitted September 2021.  Results from this first project have been presented to LSST's supernova group.
+
+\section{What I'm Doing Now}
+With Professor Wood-Vasey's blessing, I am taking general relativity I and II through the University of Pittsburgh during the Fall 2021 and Spring 2022 semesters. I am a teaching assistant for Honors Physics I under Professor Wood-Vasey.  What time I have left is spent creating plots and finalizing a paper outline for my first paper with Dr. Kim, and my second overall. 
+
+The third and hopefully final draft of my first paper found no conclusive evidence that observation method or fitting technique influenced SN~Ia host bias measurements before or after SN~Ia light curve standardization. Our data sets were regressed using the Hamiltonian Monte Carlo sampler of Stan\footnote{\url{https://mc-stan.org/}}, with our model being differentiable step-like hyperbolic tangent function.  Differing star formation tracers (H$\alpha$ and UV photometry, specifically) had bias measurements distinguishable only in step location.  Excluding UV information in host galaxy template fitting did not change our sample's measured mass step, although we could not rule out neglecting UV having no discernible effect on any possible SN~Ia host sample's mass step measurements.  Given these largely null results and the promise of my DoE funded research, Professor Wood-Vasey and I are not planning a follow-up project for my first paper. 
+
+My project with Dr. Kim has required the application of novel mathematical tools provided by geometric algebra\footnote{\url{https://en.wikipedia.org/wiki/Geometric_algebra}}.  With these tools we have measured two source-agnostic and time-independent color variation curves.  Past SN~Ia empirical models have either tried to fit only a single color variation curve, or made strong assumptions about the shape of and parameter distributions describing a second color law.  SN~Ia color variation results from the effects of dust attenuation, but it is a matter of debate whether further dust-independent variation in SN~Ia color exists.  Our model provides a resolved description of these two color curves by promoting them to a two-dimensional surface, removing the mathematical degenerates inherent to sampling otherwise mathematically identical curves.  We are making plots and finalizing our paper outline and plan to have a draft ready for submission early next semester.
+
+\section{What I'm Going To Do}
+Dr. Kim and I may write a second paper expanding upon our model.  Regardless, this project and the description of geometric algebra applications to Bayesian modeling is likely sufficient to write a dissertation.  I plan on presenting this work next summer at AAS.  I believe a  graduation date between May and November 2023 is reasonable.
+Funding for next Summer and next academic year is to be determined, but Professor Wood-Vasey has full or partial funding for his students over the next two years.  I will apply for the Mellon Fellowship all available internal University of Pittsburgh fellowships.
+
+Events over the last three years have dramatically changed my convictions and I no long intend to stay in academia nor seek a postdoctural research position of any kind.
+
+\begin{thebibliography}{9}
+    \bibitem[Sullivan et al.(2010)]{sullivan2010} Sullivan, M., Conley, A., Howell, D.~A., et al.\ 2010, \mnras, 406, 782. doi:10.1111/j.1365-2966.2010.16731.
+    
+    \bibitem[Rigault et al.(2020)]{rigault2020} Rigault, M., Brinnel, V., Aldering, G., et al.\ 2020, \aap, 644, A176. doi:10.1051/0004-6361/201730404
+
+    \bibitem[Galbany et al.(2018)]{galbany2018} Galbany, L., Anderson, J.~P., S{\'a}nchez, S.~F., et al.\ 2018, \apj, 855, 107. doi:10.3847/1538-4357/aaaf20
+
+\end{thebibliography}
+\bibliographystyle{aasjournal}
+
+\end{document}
+
+
